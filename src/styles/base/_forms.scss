@@ -1,0 +1,91 @@
+// forms
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input,
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+	//input[type='url'],
+input[type='date'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 17px;
+	box-sizing: border-box;
+	border: 1px solid $form-element-border-color;
+	padding: $form-element-padding;
+	background-color: $form-element-border-color;
+	font-size: 12px;
+	border-radius: 17px;
+	width: 100%;
+	outline: none;
+	color: $black;
+	margin-bottom: 20px;
+
+
+	// &:hover {
+
+	// }
+
+	&:focus {
+		border-color: $form-element-focus-border-color;
+	}
+
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 40px $form-element-border-color inset !important;
+	}
+
+	@include placeholder {
+		color: $placeholder-color;
+	}
+}
+
+textarea {
+	resize: none;
+	min-height: 166px;
+	vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	background-color: $green;
+	border: none;
+	color: $white;
+	padding: 7px;
+	border-radius: 17px;
+	font-family: $base-font-sans-serif;
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	transition: background-color .4s;
+	font-weight: 700;
+	min-width: 105px;
+
+	&:hover {
+		text-decoration: none;
+		background-color: $gray;
+	}
+    &:focus, &:active {
+        outline: none;
+    }
+
+	&:disabled {
+		background-color: $gray;
+	}
+}
