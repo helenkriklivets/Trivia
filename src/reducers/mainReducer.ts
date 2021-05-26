@@ -11,11 +11,11 @@ const initialState: {
 };
 
 const mainReducer = (state = initialState, action) => {
-    console.log('reducer', initialState, action);
     switch (action.type) {
         case RECEIVE_TEST_DATA: {
-            console.log('RECEIVE_TEST_DATA', action.payload);
+            const { results } = action.payload.results;
             return update(state, {
+                testData: { $set: results },
             });
         }
         default:

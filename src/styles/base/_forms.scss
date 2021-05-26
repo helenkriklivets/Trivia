@@ -15,19 +15,28 @@ input[type='search'],
 input[type='password'],
 	//input[type='url'],
 input[type='date'],
-textarea {
+textarea,
+select {
 	-webkit-appearance: none;
 	-webkit-border-radius: 17px;
 	box-sizing: border-box;
 	border: 1px solid $form-element-border-color;
 	padding: $form-element-padding;
-	background-color: $form-element-border-color;
-	font-size: 12px;
+	background-color: $light-violet;
+	font-size: 13px;
 	border-radius: 17px;
 	width: 100%;
 	outline: none;
-	color: $black;
+	color: $violet;
 	margin-bottom: 20px;
+	@include media('>=desktop') {
+		font-size: 18px;
+	}
+
+	.dark-theme & {
+		border-color: $white;
+		color: $white;
+	}
 
 
 	// &:hover {
@@ -50,6 +59,13 @@ textarea {
 	}
 }
 
+select {
+	&:before {
+		background-image: url(./images/arrow-down.svg);
+	}
+
+}
+
 textarea {
 	resize: none;
 	min-height: 166px;
@@ -64,18 +80,27 @@ input[type='submit'] {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	cursor: pointer;
-	background-color: $green;
 	border: none;
 	color: $white;
-	padding: 7px;
-	border-radius: 17px;
+	border-radius: 14px;
+	padding: $btn-padding;
 	font-family: $base-font-sans-serif;
 	display: block;
-	font-size: 16px;
+	font-size: $btn-font-size;
 	line-height: 1;
 	transition: background-color .4s;
 	font-weight: 700;
-	min-width: 105px;
+	width: 446px;
+	max-width: 100%;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #FFA67A 0%, #FF6065 100%);
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(198,82,82,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(198,82,82,1);
+	box-shadow: 0px 4px 0px 0px rgba(198,82,82,1);
+
+	@include media('>=desktop') {
+		font-size: 21px;
+	}
 
 	&:hover {
 		text-decoration: none;
@@ -87,5 +112,30 @@ input[type='submit'] {
 
 	&:disabled {
 		background-color: $gray;
+	}
+}
+
+label {
+	color: $peach;
+	margin-bottom: 13px;
+}
+
+.btn-dark {
+	background-color: $btn-background;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(66,74,158,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(66,74,158,1);
+	box-shadow: 0px 4px 0px 0px rgba(66,74,158,1);
+}
+.btn-light {
+	border: 2px solid $violet;
+	padding: 23px;
+}
+
+.start-testing-form {
+	max-width: 445px;
+	margin: 0 auto;
+	label {
+		display: flex;
+		align-items: center;
 	}
 }

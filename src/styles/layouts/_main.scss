@@ -1,0 +1,20 @@
+//@import "../style";
+.container {
+  width: 700px;
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.dark-theme {
+  background-color: $light-violet;
+  color: $white;
+}
+
+.input-group {
+  .img-wrap {
+    padding-right: 16px;
+    width: 100px;
+    height: 100px;
+  }
+}

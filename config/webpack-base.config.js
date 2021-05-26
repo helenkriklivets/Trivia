@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const host = 'localhost';
-const port = 3001;
+const port = 3000;
 
 module.exports = {
 
@@ -80,11 +80,11 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'fonts/'
+                            outputPath: '../images/'
                         }
                     }
                 ]
-            }
+            },
         ]
     },
     resolve: {
