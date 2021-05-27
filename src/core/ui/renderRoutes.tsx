@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Switch } from 'react-router';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 const renderRoutes = (routes, parentPath = '', extraProps = {}) => {
   return routes ? (
