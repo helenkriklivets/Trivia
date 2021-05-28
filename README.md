@@ -15,8 +15,12 @@ For build files for server:
 npm run build:dev
 ```
 
+#
+#### .ENV file variables
 
+``` REACT_APP_BASE_URL ``` - variable for base API url
 
+#
 #####Comments:
 
 - We have in requirements that all graphic elements should be SVG’s.

@@ -10,12 +10,14 @@ $middle-gray: #dfdfdf;
 $light-gray: #f2f2f2;
 $red: #ff5b5b;
 $green: #0cd354;
+$light-purple: #DBDEFF;
 $light-violet: #4751C0;
 $violet: #4953BE;
+$dark-violet: #424A9E;
+
 $terracotta: #C65252;
 $peach: #F7A491;
-
-
+$dark-peach: #FF7878;
 
 
 
@@ -57,10 +59,10 @@ $h2-font-size: 26px !default;
 $h3-font-size: 19px !default;
 $h4-font-size: 16px !default;
 $h5-font-size: 14px !default;
-$h6-font-size: 12px !default;
+$h6-font-size: 13px !default;
 
 $headings-font-family: $base-font-sans-serif !default;
-$headings-color: inherit !default;
+$headings-color: $violet !default;
 
 
 $animation-speed: 0.3s;

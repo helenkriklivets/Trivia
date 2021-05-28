@@ -1,4 +1,3 @@
-
 class ApiError {
     public status: number;
     public message: string;

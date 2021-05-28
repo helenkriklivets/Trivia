@@ -20,7 +20,7 @@ module.exports = {
         },
     },
     entry: {
-       ui: ['./entrypoints/App.tsx', './src/styles/style.scss'],
+        ui: ['./entrypoints/App.tsx', './src/styles/style.scss'],
     },
     output: {
         filename: './assets/js/[name].js',

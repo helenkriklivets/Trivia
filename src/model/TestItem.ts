@@ -1,4 +1,3 @@
-
 class TestItem {
     public category: string;
     public typeOfAnswer: string;

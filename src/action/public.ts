@@ -1,5 +1,5 @@
 // Constants
-import { RECEIVE_TEST_DATA } from 'constantList';
+import { RECEIVE_TEST_DATA, ACTIVE_ITEM } from 'constantList';
 
 // Model
 import TestData from 'model/TestData';
@@ -11,10 +11,22 @@ const receiveResultAction = (results: TestData) =>  ({
     payload: { results },
 });
 
-export const getResultsData = () => (dispatch) => {
-    return ApiInfoService.getResults()
+// const receiveActiveItem = () => ({
+//     type: ACTIVE_ITEM,
+//     payload: {  },
+// });
+
+export const getResultsData = (query) => (dispatch) => {
+    return ApiInfoService.getResults(query)
         .then((results) => {
             console.log(results);
             dispatch(receiveResultAction(results));
         });
+};
+
+export const getActiveItem = () => {
+    // return ApiInfoService.getResults()
+    //     .then((results) => {
+            console.log('get active item fn');
+        // });
 };

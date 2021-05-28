@@ -1,0 +1,40 @@
+.question {
+  color: $violet;
+  font-size: 25px;
+  @include media('>=desktop') {
+    font-size: 31px;
+  }
+}
+
+
+.progress-value {
+  font-size: 14px;
+  color: $violet;
+  font-weight: 700;
+  @include media('>=desktop') {
+    font-size: 20px;
+  }
+}
+
+.count-max {
+
+}
+
+.count {
+  font-size: 20px;
+  color: $dark-peach;
+  @include media('>=desktop') {
+    font-size: 28px;
+  }
+}
+
+.progress-bar {
+  background-color: $light-purple;
+  height: 5px;
+
+}
+.progress {
+  background-color: $dark-peach;
+  height: 5px;
+  width: 30%; //should go from js
+}
